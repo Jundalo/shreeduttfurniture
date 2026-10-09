@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8" /><meta
+      content="width=device-width, initial-scale=1.0" name="viewport" /><meta
+      content="web_standard" name="shell-type" /><link
+      href="https://fonts.googleapis.com" rel="preconnect" /><link crossorigin
+      href="https://fonts.gstatic.com" rel="preconnect" /><link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap"
+      rel="stylesheet" /><link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet" /><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script
+      src="https://cdn.tailwindcss.com"></script><script
+      id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-tint": "#7b5643", "outline-variant": "#d4c3bc", "surface-bright": "#fef9f2", "on-secondary-fixed": "#281800", "inverse-surface": "#32302c", "inverse-primary": "#edbca5", "secondary": "#7e5708", "tertiary-fixed-dim": "#3de273", "surface-dim": "#ded9d3", "surface-container-high": "#ece7e1", "primary-container": "#5b3a29", "on-surface-variant": "#50443f", "tertiary-fixed": "#66ff8e", "on-tertiary-fixed": "#002109", "secondary-container": "#ffc974", "primary": "#422415", "outline": "#82746e", "on-primary": "#ffffff", "surface-container": "#f2ede6", "error-container": "#ffdad6", "on-primary-container": "#d3a48e", "on-tertiary": "#ffffff", "primary-fixed-dim": "#edbca5", "on-tertiary-container": "#08c95d", "on-surface": "#1d1c18", "surface-container-highest": "#e6e2db", "tertiary": "#003413", "on-secondary-fixed-variant": "#614000", "on-error": "#ffffff", "surface-container-low": "#f8f3ec", "secondary-fixed-dim": "#f3be6a", "surface-container-lowest": "#ffffff", "surface-variant": "#e6e2db", "on-secondary-container": "#795203", "inverse-on-surface": "#f5f0e9", "surface": "#fef9f2", "on-primary-fixed-variant": "#613f2d", "on-secondary": "#ffffff", "background": "#fef9f2", "secondary-fixed": "#ffddaf", "error": "#ba1a1a", "tertiary-container": "#004d1f", "primary-fixed": "#ffdbcb", "on-primary-fixed": "#2e1507", "on-background": "#1d1c18", "on-error-container": "#93000a", "on-tertiary-fixed-variant": "#005322" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-md": "1rem", "margin-mobile": "1.25rem", "space-sm": "0.75rem", "margin": "3rem", "gutter-mobile": "1rem", "space-xl": "2.5rem", "gutter": "1.5rem", "space-lg": "1.5rem", "space-xs": "0.5rem" }, "fontFamily": { "label-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-md": ["Playfair Display"], "body-md": ["Plus Jakarta Sans"], "headline-lg": ["Playfair Display"], "title-lg": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Playfair Display"], "body-sm": ["Plus Jakarta Sans"], "display-hero": ["Playfair Display"], "headline-md-mobile": ["Playfair Display"], "headline-sm": ["Playfair Display"], "display-hero-mobile": ["Playfair Display"], "label-sm": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"] }, "fontSize": { "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "500" }], "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "title-lg": ["18px", { "lineHeight": "26px", "fontWeight": "600" }], "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "600" }], "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }], "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-md-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "500" }], "headline-sm": ["22px", { "lineHeight": "28px", "fontWeight": "500" }], "display-hero-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "500" }], "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }] } } } };</script></head><body
+    class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md shadow-[0_1px_8px_rgba(91,58,41,0.08)]">
+  <div class="h-20 max-w-[1320px] mx-auto px-margin-mobile md:px-margin flex items-center justify-between gap-space-sm">
+    <a class="flex items-center gap-space-xs min-w-0" href="index.html" aria-label="Shree Dutt Furniture home">
+      <span class="w-9 h-9 rounded-xl bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-surface text-[20px]">chair</span></span>
+      <span class="flex flex-col min-w-0"><span class="font-headline-sm text-headline-sm text-primary tracking-tight leading-none">Shree Dutt Furniture</span><span class="font-label-sm text-label-sm text-secondary tracking-widest uppercase mt-0.5">Artisanal Woodcraft - Ahmedabad</span></span>
+    </a>
+    <nav aria-label="Main navigation" class="hidden lg:flex items-center gap-space-xs px-space-xs py-space-xs rounded-full bg-surface-container-low">
+      <a class="site-nav-link px-space-sm py-space-xs rounded-full transition-colors font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface" data-page-link="index.html" href="index.html">Home</a>
+      <a class="site-nav-link px-space-sm py-space-xs rounded-full transition-colors font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface" data-page-link="products.html" href="products.html">Products</a>
+      <a class="site-nav-link px-space-sm py-space-xs rounded-full transition-colors font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface" data-page-link="about.html" href="About.html">About</a>
+      <a class="site-nav-link px-space-sm py-space-xs rounded-full transition-colors font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface" data-page-link="contact.html" href="contact.html">Contact</a>
+    </nav>
+    <div class="flex items-center gap-space-xs shrink-0">
+      <a class="hidden sm:inline-flex items-center gap-space-xs px-space-md py-space-xs bg-tertiary-container hover:bg-tertiary text-on-tertiary font-label-lg text-label-lg rounded-xl shadow-sm transition-all" href="https://wa.me/919727700636" target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined text-[18px]">chat</span><span>WhatsApp Us</span></a>
+      <a class="w-9 h-9 rounded-full bg-surface-container-high hover:bg-surface-container-highest text-primary flex items-center justify-center shrink-0 transition-colors" href="tel:+919727700636" aria-label="Call Shree Dutt Furniture"><span class="material-symbols-outlined text-[18px]">call</span></a>
+      <details class="relative lg:hidden">
+        <summary class="list-none cursor-pointer w-9 h-9 rounded-full bg-surface-container-high text-primary flex items-center justify-center" aria-label="Open navigation menu"><span class="material-symbols-outlined">menu</span></summary>
+        <nav aria-label="Mobile navigation" class="absolute right-0 top-full mt-2 w-52 rounded-xl bg-surface-container-lowest p-space-xs shadow-xl border border-outline-variant/30">
+          <a class="site-mobile-nav-link block rounded-lg px-space-sm py-3 font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-low" data-page-link="index.html" href="index.html">Home</a>
+          <a class="site-mobile-nav-link block rounded-lg px-space-sm py-3 font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-low" data-page-link="products.html" href="products.html">Products</a>
+          <a class="site-mobile-nav-link block rounded-lg px-space-sm py-3 font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-low" data-page-link="about.html" href="About.html">About</a>
+          <a class="site-mobile-nav-link block rounded-lg px-space-sm py-3 font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-low" data-page-link="contact.html" href="contact.html">Contact</a>
+        </nav>
+      </details>
+    </div>
+  </div>
+  <div class="w-full h-[1px] bg-gradient-to-r from-transparent via-secondary-container to-transparent opacity-60"></div>
+</header><main
+      class="w-full pt-20 bg-background min-h-screen"><div
+        class="flex flex-col w-full">
+        <!-- Banner / Editorial Hero Header -->
+        <section
+          class="relative w-full bg-surface-container-low py-16 md:py-24 overflow-hidden">
+          <!-- Subtle architectural hairline watermark lines -->
+          <div class="absolute inset-0 pointer-events-none opacity-40">
+            <div
+              class="h-full max-w-[1320px] mx-auto px-margin-mobile md:px-margin grid grid-cols-6 md:grid-cols-12 gap-gutter">
+              <div
+                class="col-span-1 border-r border-outline-variant/30 h-full"></div>
+              <div
+                class="col-span-2 border-r border-outline-variant/30 h-full hidden md:block"></div>
+              <div
+                class="col-span-3 border-r border-outline-variant/30 h-full"></div>
+              <div
+                class="col-span-2 border-r border-outline-variant/30 h-full hidden md:block"></div>
+              <div class="col-span-4 h-full"></div>
+            </div>
+          </div>
+          <div
+            class="relative max-w-[1320px] mx-auto px-margin-mobile md:px-margin flex flex-col items-start z-10">
+            <div
+              class="inline-flex items-center gap-space-xs px-3.5 py-1.5 rounded-full bg-surface-container-high text-secondary font-label-sm text-label-sm tracking-widest uppercase mb-space-md shadow-sm">
+              <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+              OUR STORY &amp; CRAFTSMANSHIP • VASTRAPUR, AHMEDABAD
+            </div>
+            <h1
+              class="font-headline-lg text-headline-lg md:text-display-hero text-primary max-w-4xl tracking-tight leading-tight">
+              About Shree Dutt Furniture
+            </h1>
+            <p
+              class="mt-space-md font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+              Handcrafted wooden precision, modular engineering, and enduring
+              architectural furniture tailored to your living spaces.
+            </p>
+            <!-- Decorative Metric Accent Pills -->
+            <div
+              class="mt-space-lg flex flex-wrap items-center gap-space-md text-on-surface-variant font-label-md text-label-md">
+              <div
+                class="flex items-center gap-space-xs bg-surface-container-lowest px-4 py-2 rounded-xl shadow-sm">
+                <span
+                  class="material-symbols-outlined text-secondary text-[20px]">carpenter</span>
+                <span>In-House Craftsmanship</span>
+              </div>
+              <div
+                class="flex items-center gap-space-xs bg-surface-container-lowest px-4 py-2 rounded-xl shadow-sm">
+                <span
+                  class="material-symbols-outlined text-secondary text-[20px]">architecture</span>
+                <span>Architect Drawing Compliance</span>
+              </div>
+              <div
+                class="flex items-center gap-space-xs bg-surface-container-lowest px-4 py-2 rounded-xl shadow-sm">
+                <span
+                  class="material-symbols-outlined text-secondary text-[20px]">location_on</span>
+                <span>Vastrapur, Ahmedabad</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Story Section (Split Two-Column Layout) -->
+        <section class="w-full py-16 md:py-24 bg-background">
+          <div class="max-w-[1320px] mx-auto px-margin-mobile md:px-margin">
+            <div
+              class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+              <!-- Left Column: Master Craftsman Workshop Image -->
+              <div class="lg:col-span-6 relative">
+                <div
+                  class="relative rounded-xl overflow-hidden shadow-xl bg-surface-container-high aspect-[4/3] md:aspect-[5/4]">
+                  <img
+                    alt="Shree Dutt Furniture artisan at workbench in Ahmedabad"
+                    class="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                    data-alt="Experienced Indian master woodworker meticulously hand-planing a seasoned teak wood dining slab inside a warm Ahmedabad workshop. Traditional brass hand tools, wooden shavings curled on the workbench, and rolled architectural blueprint drawings in soft golden ambient daylight."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkn0JB8RXml-WtcinYiUAjAAH97kIPW77bN5ka0iODiqNURQg8u2yIXXiHvTAPsv6jehUELzoJTT2SDMucdkAaHlTCYZpKE9DcR11mRT4HY7hyXvc2p-twbN68q1LyEXKEFyZkVqBR2_ry8-EFuD2Pq922kpUUGUGsWHUJ80_XBt04ahFQvsy1RgUi1cVT8jToMxB5tp6sXb9WeVV-Zccrk45qRqGMn7KLJiKS0w6Vg66JO-qqu99nGw" />
+                  <div
+                    class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent pointer-events-none"></div>
+                  <div
+                    class="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-surface/90 backdrop-blur-md shadow-md flex items-center justify-between">
+                    <div>
+                      <p
+                        class="font-title-md text-title-md text-primary">Vastrapur
+                        Joinery Workshop</p>
+                      <p
+                        class="font-body-sm text-body-sm text-on-surface-variant">Active
+                        timber selection, mortise joinery &amp; finishing</p>
+                    </div>
+                    <span
+                      class="w-10 h-10 rounded-full bg-primary-container text-on-primary flex items-center justify-center shrink-0">
+                      <span
+                        class="material-symbols-outlined text-[20px]">handyman</span>
+                    </span>
+                  </div>
+                </div>
+                <!-- Secondary floating mini card for craft depth -->
+                <div
+                  class="hidden sm:flex absolute -top-6 -right-6 bg-surface-container-lowest p-4 rounded-xl shadow-lg flex-col gap-1 max-w-[210px] z-10">
+                  <span
+                    class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">100%
+                    Customization</span>
+                  <span class="font-body-sm text-body-sm text-on-surface">Every
+                    joint crafted to millimetric site specifications</span>
+                </div>
+              </div>
+              <!-- Right Column: Editorial Narrative & Workshop Values -->
+              <div class="lg:col-span-6 flex flex-col items-start space-y-6">
+                <div
+                  class="inline-flex items-center gap-space-xs px-3.5 py-1.5 rounded-full bg-secondary-fixed/40 text-on-secondary-fixed font-label-sm text-label-sm tracking-wider uppercase font-semibold">
+                  <span
+                    class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+                  ROOTED IN AHMEDABAD
+                </div>
+                <h2
+                  class="font-headline-md text-headline-md text-primary leading-tight">
+                  Crafting Spaces with Enduring Wooden Heritage
+                </h2>
+                <!-- Verbatim Company Overview text -->
+                <div class="p-5 rounded-xl bg-surface-container-low shadow-sm">
+                  <p
+                    class="font-body-lg text-body-lg text-on-surface leading-relaxed">
+                    “Shree Dutt Furniture is a furniture maker in Vastrapur,
+                    Ahmedabad. We make customized furniture as per your
+                    architecture requirement. We are professional in modular
+                    furniture, solid wood furniture and all kinds of MS
+                    furniture.”
+                  </p>
+                </div>
+                <!-- Verbatim Founder Experience Note Placeholder -->
+                <div
+                  class="w-full p-4 rounded-xl bg-surface-container-high/80 text-on-surface-variant flex items-center gap-3">
+                  <span
+                    class="material-symbols-outlined text-secondary text-[24px] shrink-0">badge</span>
+                  <div class="flex-1">
+                    <span
+                      class="font-label-md text-label-md uppercase tracking-wider text-secondary block font-bold">Leadership
+                      &amp; Heritage</span>
+                    <p
+                      class="font-body-sm text-body-sm italic text-on-surface font-medium">
+                      [Founder name and years of experience to be added by the
+                      owner]
+                    </p>
+                  </div>
+                </div>
+                <!-- Workshop Highlights Stack -->
+                <div class="w-full pt-2 grid grid-cols-1 sm:grid-cols-3 gap-3">
+                  <div
+                    class="flex items-start gap-2.5 p-3 rounded-lg bg-surface-container-low shadow-sm">
+                    <span
+                      class="material-symbols-outlined text-secondary text-[20px] mt-0.5 shrink-0">group</span>
+                    <div>
+                      <span
+                        class="font-title-md text-[14px] text-primary block leading-tight">Direct
+                        carpenter</span>
+                      <span
+                        class="font-body-sm text-[12px] text-on-surface-variant">collaborations</span>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-start gap-2.5 p-3 rounded-lg bg-surface-container-low shadow-sm">
+                    <span
+                      class="material-symbols-outlined text-secondary text-[20px] mt-0.5 shrink-0">straighten</span>
+                    <div>
+                      <span
+                        class="font-title-md text-[14px] text-primary block leading-tight">Zero
+                        standard-size</span>
+                      <span
+                        class="font-body-sm text-[12px] text-on-surface-variant">compromise</span>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-start gap-2.5 p-3 rounded-lg bg-surface-container-low shadow-sm">
+                    <span
+                      class="material-symbols-outlined text-secondary text-[20px] mt-0.5 shrink-0">forest</span>
+                    <div>
+                      <span
+                        class="font-title-md text-[14px] text-primary block leading-tight">Raw
+                        timber samples</span>
+                      <span
+                        class="font-body-sm text-[12px] text-on-surface-variant">at
+                        studio</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="pt-2">
+                  <a
+                    class="inline-flex items-center gap-space-xs px-space-lg py-3 rounded-xl bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg shadow-md transition-all"
+                    href="https://wa.me/919727700636" rel="noopener noreferrer"
+                    target="_blank">
+                    <span
+                      class="material-symbols-outlined text-[18px]">calendar_month</span>
+                    <span>Schedule Studio Visit</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- What We Do Section -->
+        <section class="w-full py-16 md:py-24 bg-surface-container-low">
+          <div class="max-w-[1320px] mx-auto px-margin-mobile md:px-margin">
+            <div class="text-center max-w-3xl mx-auto mb-14">
+              <span
+                class="font-label-md text-label-md tracking-widest uppercase text-secondary font-semibold">Specialized
+                Disciplines</span>
+              <h2
+                class="font-headline-lg text-headline-lg text-primary mt-2">What
+                We Do</h2>
+              <p class="font-body-lg text-body-lg text-on-surface-variant mt-3">
+                Tailored spatial solutions built under one unified workshop
+                roof.
+              </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+              <!-- Service 1: Modular Furniture -->
+              <div
+                class="group bg-surface-container-lowest rounded-xl p-space-lg shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                <div>
+                  <div
+                    class="w-14 h-14 rounded-xl bg-surface-container-high text-primary flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+                    <span
+                      class="material-symbols-outlined text-[28px]">kitchen</span>
+                  </div>
+                  <div class="flex items-center gap-2 mb-2">
+                    <span
+                      class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">01
+                      / Modern Spatial</span>
+                  </div>
+                  <h3
+                    class="font-headline-sm text-headline-sm text-primary mb-3">Modular
+                    Furniture</h3>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                    Precision-engineered modular wardrobes, contemporary kitchen
+                    cabinets, TV consoles, and ergonomic study desks with custom
+                    internal hardware.
+                  </p>
+                </div>
+                <div class="mt-6 pt-5 bg-surface-container-low rounded-lg p-3">
+                  <span
+                    class="font-label-sm text-label-sm text-primary font-semibold block mb-1">Key
+                    Customizations:</span>
+                  <span
+                    class="font-body-sm text-body-sm text-on-surface-variant">Fluted
+                    acrylic shutters, soft-close Blum/Hettich fittings,
+                    integrated warm LED channels.</span>
+                </div>
+              </div>
+              <!-- Service 2: Solid Wood Furniture -->
+              <div
+                class="group bg-surface-container-lowest rounded-xl p-space-lg shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                <div>
+                  <div
+                    class="w-14 h-14 rounded-xl bg-surface-container-high text-primary flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+                    <span
+                      class="material-symbols-outlined text-[28px]">chair</span>
+                  </div>
+                  <div class="flex items-center gap-2 mb-2">
+                    <span
+                      class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">02
+                      / Heirloom Craft</span>
+                  </div>
+                  <h3
+                    class="font-headline-sm text-headline-sm text-primary mb-3">Solid
+                    Wood Furniture</h3>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                    Enduring handcrafted dining sets, heritage beds, accent
+                    chairs, and custom consoles sculpted from seasoned teak,
+                    sheesham, and premium hardwoods with authentic joinery.
+                  </p>
+                </div>
+                <div class="mt-6 pt-5 bg-surface-container-low rounded-lg p-3">
+                  <span
+                    class="font-label-sm text-label-sm text-primary font-semibold block mb-1">Key
+                    Customizations:</span>
+                  <span
+                    class="font-body-sm text-body-sm text-on-surface-variant">Live-edge
+                    timber slabs, dovetail joints, hand-rubbed PU and matte
+                    polyurethane coats.</span>
+                </div>
+              </div>
+              <!-- Service 3: MS Furniture -->
+              <div
+                class="group bg-surface-container-lowest rounded-xl p-space-lg shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                <div>
+                  <div
+                    class="w-14 h-14 rounded-xl bg-surface-container-high text-primary flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+                    <span
+                      class="material-symbols-outlined text-[28px]">fence</span>
+                  </div>
+                  <div class="flex items-center gap-2 mb-2">
+                    <span
+                      class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">03
+                      / Architectural Hybrid</span>
+                  </div>
+                  <h3
+                    class="font-headline-sm text-headline-sm text-primary mb-3">MS
+                    Furniture</h3>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                    Durable architectural mild steel frames, powder-coated
+                    partition stands, industrial dining bases, and structural
+                    metalwork paired seamlessly with solid wood surfaces.
+                  </p>
+                </div>
+                <div class="mt-6 pt-5 bg-surface-container-low rounded-lg p-3">
+                  <span
+                    class="font-label-sm text-label-sm text-primary font-semibold block mb-1">Key
+                    Customizations:</span>
+                  <span
+                    class="font-body-sm text-body-sm text-on-surface-variant">Matte
+                    black powder coating, brass inlays, heavy-gauge steel
+                    profiles for open layouts.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Our Promise Section (Soft Beige Background #EFE4D6 equivalent to surface-variant) -->
+        <section class="w-full py-16 md:py-24 bg-surface-container">
+          <div class="max-w-[1320px] mx-auto px-margin-mobile md:px-margin">
+            <div class="text-center max-w-2xl mx-auto mb-14">
+              <span
+                class="font-label-md text-label-md tracking-widest uppercase text-secondary font-semibold">The
+                Workshop Ethos</span>
+              <h2
+                class="font-headline-lg text-headline-lg text-primary mt-2">Our
+                Promise</h2>
+              <p class="font-body-lg text-body-lg text-on-surface-variant mt-3">
+                The values that guide every cut, joint, and millimeter we
+                calibrate.
+              </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+              <!-- Promise Card 1 -->
+              <div
+                class="bg-surface-container-lowest p-8 rounded-xl shadow-md flex flex-col items-start">
+                <div
+                  class="w-12 h-12 rounded-lg bg-surface-container-high text-primary flex items-center justify-center mb-6">
+                  <span
+                    class="material-symbols-outlined text-[26px]">square_foot</span>
+                </div>
+                <h3 class="font-title-lg text-title-lg text-primary mb-3">Made
+                  as per your requirement</h3>
+                <p
+                  class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                  Every piece is tailored strictly to your interior drawings,
+                  floor plan, and bespoke architectural specifications without
+                  catalogue constraints.
+                </p>
+                <div
+                  class="mt-6 flex items-center gap-2 text-secondary font-label-sm text-label-sm font-semibold">
+                  <span
+                    class="material-symbols-outlined text-[16px]">check_circle</span>
+                  <span>Zero pre-fabricated modules</span>
+                </div>
+              </div>
+              <!-- Promise Card 2 -->
+              <div
+                class="bg-surface-container-lowest p-8 rounded-xl shadow-md flex flex-col items-start">
+                <div
+                  class="w-12 h-12 rounded-lg bg-surface-container-high text-primary flex items-center justify-center mb-6">
+                  <span
+                    class="material-symbols-outlined text-[26px]">verified_user</span>
+                </div>
+                <h3
+                  class="font-title-lg text-title-lg text-primary mb-3">Quality
+                  materials</h3>
+                <p
+                  class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                  Seasoned hardwoods, moisture-resistant plywood, heavy-gauge
+                  mild steel, and branded architectural hardware for lasting
+                  structural longevity.
+                </p>
+                <div
+                  class="mt-6 flex items-center gap-2 text-secondary font-label-sm text-label-sm font-semibold">
+                  <span
+                    class="material-symbols-outlined text-[16px]">check_circle</span>
+                  <span>Tested anti-termite treatment</span>
+                </div>
+              </div>
+              <!-- Promise Card 3 -->
+              <div
+                class="bg-surface-container-lowest p-8 rounded-xl shadow-md flex flex-col items-start">
+                <div
+                  class="w-12 h-12 rounded-lg bg-surface-container-high text-primary flex items-center justify-center mb-6">
+                  <span
+                    class="material-symbols-outlined text-[26px]">handshake</span>
+                </div>
+                <h3 class="font-title-lg text-title-lg text-primary mb-3">Honest
+                  communication</h3>
+                <p
+                  class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                  Clear timelines, transparent material sourcing, upfront
+                  milestone pricing, and direct one-on-one consultation with
+                  craftsmen.
+                </p>
+                <div
+                  class="mt-6 flex items-center gap-2 text-secondary font-label-sm text-label-sm font-semibold">
+                  <span
+                    class="material-symbols-outlined text-[16px]">check_circle</span>
+                  <span>No hidden markup fees</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Ratings & Social Proof Block -->
+        <section class="w-full py-14 bg-background">
+          <div class="max-w-[1320px] mx-auto px-margin-mobile md:px-margin">
+            <div
+              class="bg-surface-container-low rounded-xl p-6 md:p-10 shadow-md">
+              <div
+                class="flex flex-col lg:flex-row items-center justify-between gap-8">
+                <div class="max-w-xl text-center lg:text-left">
+                  <div
+                    class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm uppercase font-semibold mb-3">
+                    <span
+                      class="material-symbols-outlined text-[16px]">verified</span>
+                    AUTHENTIC LOCAL REPUTATION
+                  </div>
+                  <h3
+                    class="font-headline-sm text-headline-sm text-primary">Trusted
+                    Across Ahmedabad Residences</h3>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant mt-2">
+                    Recognized and recommended by homeowners, turnkey interior
+                    designers, and architects throughout Vastrapur, Bodakdev,
+                    and Satellite.
+                  </p>
+                </div>
+                <div
+                  class="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full lg:w-auto">
+                  <!-- Google Review Card -->
+                  <div
+                    class="bg-surface-container-lowest p-5 rounded-xl shadow-sm flex items-center gap-4">
+                    <div
+                      class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center text-primary shrink-0">
+                      <span
+                        class="font-headline-sm text-[22px] font-bold text-primary">G</span>
+                    </div>
+                    <div class="flex flex-col">
+                      <div class="flex items-center gap-1 text-secondary">
+                        <span class="material-symbols-outlined text-[18px]"
+                          style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-[18px]"
+                          style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-[18px]"
+                          style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-[18px]"
+                          style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-[18px]"
+                          style="font-variation-settings: 'FILL' 1;">star</span>
+                      </div>
+                      <span
+                        class="font-title-md text-title-md text-primary font-bold mt-1">4.7
+                        on Google</span>
+                      <span
+                        class="font-body-sm text-body-sm text-on-surface-variant">3
+                        verified public reviews</span>
+                    </div>
+                  </div>
+                  <!-- Justdial Review Card -->
+                  <div
+                    class="bg-surface-container-lowest p-5 rounded-xl shadow-sm flex items-center gap-4">
+                    <div
+                      class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center text-primary shrink-0">
+                      <span
+                        class="material-symbols-outlined text-[24px] text-secondary">stars</span>
+                    </div>
+                    <div class="flex flex-col">
+                      <div class="flex items-center gap-1 text-secondary">
+                        <span class="material-symbols-outlined text-[18px]"
+                          style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-[18px]"
+                          style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-[18px]"
+                          style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined text-[18px]"
+                          style="font-variation-settings: 'FILL' 1;">star</span>
+                        <span
+                          class="material-symbols-outlined text-[18px]">star_half</span>
+                      </div>
+                      <span
+                        class="font-title-md text-title-md text-primary font-bold mt-1">4.2
+                        / 5 on Justdial</span>
+                      <span
+                        class="font-body-sm text-body-sm text-on-surface-variant">Verified
+                        local business listing</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Photo Gallery Strip (4 Workshop & Commission Cards) -->
+        <section class="w-full py-16 md:py-24 bg-surface-container-low">
+          <div class="max-w-[1320px] mx-auto px-margin-mobile md:px-margin">
+            <div
+              class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+              <div>
+                <span
+                  class="font-label-md text-label-md tracking-widest uppercase text-secondary font-semibold">CRAFT
+                  IN ACTION</span>
+                <h2
+                  class="font-headline-md text-headline-md text-primary mt-2">Inside
+                  Our Workshop &amp; Recent Commissions</h2>
+              </div>
+              <a
+                class="inline-flex items-center gap-2 text-primary hover:text-secondary font-label-lg text-label-lg transition-colors"
+                href="https://wa.me/919727700636" rel="noopener noreferrer"
+                target="_blank">
+                <span>Request catalogue pictures</span>
+                <span
+                  class="material-symbols-outlined text-[18px]">arrow_forward</span>
+              </a>
+            </div>
+            <div
+              class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+              <!-- Gallery 1: Hand-planing Teak -->
+              <div
+                class="group relative rounded-xl overflow-hidden bg-surface-container-high shadow-md aspect-[3/4]">
+                <img alt="Carpenter hand planing seasoned teak wood"
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  data-alt="Close up shot of an Indian master carpenter using a traditional handheld wooden hand plane on seasoned teak wood. Spiral wooden shavings fall onto an authentic woodworker workbench with hand chisels in warm workshop daylight."
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaBTK-INGhPfrB9wiwz1oF78QfrJKd-fXKwtVAqWVozmhfeLLPX9nKSc9p1e5DCLRsNydaWaJvBpHj6RMzT0uI0mGoTTzpVv4rMBrd9y-NFRn2TTppEsFDDQe9a85E4-wgG5Xji3kkaOwWhiTg2BuT9TObYnKxtUiXBFfM8vgSTr_el1wIqCm0CcTJE66yqFr5YaY-gXm1E5i_XuOQhLrhl6yRjM8bc-zNI9dAXrrircrEVoB_wJvbDA" />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+                <div
+                  class="absolute bottom-0 left-0 right-0 p-5 text-on-primary">
+                  <span
+                    class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-container block mb-1">Handcrafted
+                    Joinery</span>
+                  <p
+                    class="font-title-md text-title-md font-semibold">Hand-planing
+                    seasoned teak wood</p>
+                  <p
+                    class="font-body-sm text-body-sm text-surface-container-low mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Traditional
+                    hand tools ensuring flawless grain alignment.</p>
+                </div>
+              </div>
+              <!-- Gallery 2: Modular Wardrobe with Lighting -->
+              <div
+                class="group relative rounded-xl overflow-hidden bg-surface-container-high shadow-md aspect-[3/4]">
+                <img alt="Installed floor-to-ceiling modular wardrobe"
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  data-alt="Interior luxury bedroom shot of a floor to ceiling modular wardrobe custom built with fluted warm oak wood panels, satin brass vertical handles, and recessed warm 3000K LED profile lighting in an Ahmedabad flat."
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1wT3Tw8TyHwQ14Wsf7h6MVX339MXKmChVo3o0854Qd0ixnH-RGqzGZOFU0MxnIIVym7XxMHDAO3A49oK38DD6j99KxX_dmV3bfQxQeOjrcnIv1vwVpy8DaWNapHBSH6gSV4wLF7JivHojC6gR-Hol3pLx7T57ZLxiuLMMrNkRm2a_u1t9F1XVeJ-YqfbpJRZgW6_IrRXvCtaBrK6kV9nndYRuRs3Pb8grUy2rCutzjRIWQOwk4dSFHw" />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+                <div
+                  class="absolute bottom-0 left-0 right-0 p-5 text-on-primary">
+                  <span
+                    class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-container block mb-1">Installed
+                    Commission</span>
+                  <p
+                    class="font-title-md text-title-md font-semibold">Floor-to-ceiling
+                    modular wardrobe</p>
+                  <p
+                    class="font-body-sm text-body-sm text-surface-container-low mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Fluted
+                    shutters with integrated concealed profile lights.</p>
+                </div>
+              </div>
+              <!-- Gallery 3: Solid Wood Dining Set -->
+              <div
+                class="group relative rounded-xl overflow-hidden bg-surface-container-high shadow-md aspect-[3/4]">
+                <img alt="Bespoke solid wood 8-seater dining table set"
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  data-alt="A grand 8 seater solid wood dining table crafted from polished golden teak wood with ergonomic curved upholstered dining chairs in an elegant contemporary Ahmedabad apartment dining room."
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrZWS9Xgj9UEDlSgCeIkI1jk-zERhU4Su2c9p2v-cV5bPCJs5FjBTksbng_fhQsgnu0VoErQoEWdEq6JK7CDx6yBgjH6S7VMZxBig5tl22yqI4n2agyQbiPhEsyELNE4K1YKT3gK-GgIFsh29bCuwRIiBNzYQClDcwx0S0GCNsTpocWeGiFQHgnwMLxqry2oGu4sH2DY30Ykyg1n6UUWMGQAzH47TLqnI3N0_GPj2zGm1A1ksrIGQphw" />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+                <div
+                  class="absolute bottom-0 left-0 right-0 p-5 text-on-primary">
+                  <span
+                    class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-container block mb-1">Bespoke
+                    Dining</span>
+                  <p class="font-title-md text-title-md font-semibold">Solid
+                    wood 8-seater dining table</p>
+                  <p
+                    class="font-body-sm text-body-sm text-surface-container-low mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Custom
+                    proportioned for modern residential floor plans.</p>
+                </div>
+              </div>
+              <!-- Gallery 4: MS Frame Structure -->
+              <div
+                class="group relative rounded-xl overflow-hidden bg-surface-container-high shadow-md aspect-[3/4]">
+                <img alt="Industrial mild steel frame structure console table"
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  data-alt="Architectural console table with sleek industrial matte black mild steel frame combined with a thick natural polished live-edge hardwood timber top set against a warm textured wall."
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHUN5qL77ls_C55FinbTtzJksIpOs9tzCwI3Jbk2fnqyvN-a1gBigkJeZ4Ow19T16i9Wjg5rMshCqPGrqGV6PtWM9L7Nff4bmP1pUTt0V9r0QxCcGOgpHtLuHFYxq6wQL78KpJcUaK_ksLYQ5KA4jzOqGCpMcVft-rQnZYTF49kgKggRA0J0lkbCJDm2tiiKy1IcwZPWGKmR8S7hhJOTZQ_OtkHbMMWuiVV-f3wexgRVSp9rEHxEN7dw" />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+                <div
+                  class="absolute bottom-0 left-0 right-0 p-5 text-on-primary">
+                  <span
+                    class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-container block mb-1">Metal
+                    + Timber Hybrid</span>
+                  <p class="font-title-md text-title-md font-semibold">MS frame
+                    industrial console table</p>
+                  <p
+                    class="font-body-sm text-body-sm text-surface-container-low mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">High-durability
+                    powder-coated structure paired with solid wood.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Final Call to Action Band -->
+        <section
+          class="w-full bg-primary-container text-surface-bright py-16 md:py-24 relative overflow-hidden">
+          <!-- Subtle isometric carpenter grid lines in background -->
+          <div class="absolute inset-0 pointer-events-none opacity-10">
+            <div
+              class="w-full h-full bg-[radial-gradient(#FAF5EE_1px,transparent_1px)] [background-size:24px_24px]"></div>
+          </div>
+          <div
+            class="relative max-w-[1320px] mx-auto px-margin-mobile md:px-margin z-10">
+            <div class="max-w-3xl flex flex-col items-start space-y-6">
+              <span
+                class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-surface-bright/10 text-secondary-fixed font-label-sm text-label-sm tracking-wider uppercase font-semibold">
+                <span class="w-2 h-2 rounded-full bg-secondary-fixed"></span>
+                GET IN TOUCH WITH THE CARPENTERS
+              </span>
+              <h2
+                class="font-headline-lg text-headline-lg md:text-[44px] text-surface-bright leading-tight">
+                Visit our workshop or message us on WhatsApp.
+              </h2>
+              <p
+                class="font-body-lg text-body-lg text-surface-dim max-w-2xl leading-relaxed">
+                Whether you have preliminary architect drawings or want to
+                consult in person over timber samples, we are ready to build for
+                you.
+              </p>
+              <!-- CTA Buttons -->
+              <div
+                class="pt-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-space-md w-full sm:w-auto">
+                <!-- WhatsApp Us (Vibrant WhatsApp green #25D366) -->
+                <a
+                  class="inline-flex items-center justify-center gap-space-xs px-space-lg py-3.5 rounded-xl bg-[#25D366] hover:bg-[#1EBE5D] text-white font-label-lg text-label-lg shadow-[0_8px_24px_rgba(37,211,102,0.3)] transition-all transform hover:scale-[1.02]"
+                  href="https://wa.me/919727700636" rel="noopener noreferrer"
+                  target="_blank">
+                  <span
+                    class="material-symbols-outlined text-[22px]">chat</span>
+                  <span>WhatsApp Us</span>
+                </a>
+                <!-- Get Directions Button with Navigation Pin -->
+                <a
+                  class="inline-flex items-center justify-center gap-space-xs px-space-lg py-3.5 rounded-xl bg-transparent hover:bg-surface-bright/10 text-secondary-fixed border border-secondary-fixed/60 font-label-lg text-label-lg transition-all"
+                  href="https://maps.google.com/?q=Shree+Dutt+Furniture+Vejalpur+Ahmedabad"
+                  rel="noopener noreferrer" target="_blank">
+                  <span
+                    class="material-symbols-outlined text-[20px] text-secondary-fixed">pin_drop</span>
+                  <span>Get Directions</span>
+                </a>
+              </div>
+              <!-- Quick Address Meta Note -->
+              <div
+                class="pt-6 border-t border-surface-bright/10 w-full flex flex-col sm:flex-row sm:items-center justify-between gap-4 text-surface-dim font-body-sm text-body-sm">
+                <div class="flex items-center gap-2">
+                  <span
+                    class="material-symbols-outlined text-[18px] text-secondary-fixed">store</span>
+                  <span>6, Hill Park Society, Vastrapur Road, Ahmedabad
+                    380015</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span
+                    class="material-symbols-outlined text-[18px] text-secondary-fixed">schedule</span>
+                  <span>Mon – Sun, 9:30 AM – 8:30 PM</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div></main>
+<div class="fixed bottom-space-lg right-space-lg z-40 hidden md:block group">
+  <div class="absolute right-full mr-space-sm top-1/2 -translate-y-1/2 hidden group-hover:flex items-center px-space-sm py-space-xs rounded-lg bg-inverse-surface text-inverse-on-surface font-label-sm text-label-sm whitespace-nowrap shadow-lg">Chat on WhatsApp<div class="w-2 h-2 bg-inverse-surface rotate-45 absolute -right-1 top-1/2 -translate-y-1/2"></div></div>
+  <a aria-label="Chat on WhatsApp" class="flex items-center justify-center w-14 h-14 rounded-full bg-tertiary-container hover:bg-tertiary text-on-tertiary shadow-xl hover:scale-105 transition-transform" href="https://wa.me/919727700636" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[28px]">chat</span></a>
+</div>
+<div class="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md px-margin-mobile py-space-xs flex items-center gap-space-sm shadow-[0_-4px_20px_rgba(91,58,41,0.08)]">
+  <a class="flex-1 flex items-center justify-center gap-space-xs py-space-sm rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-primary font-label-md text-label-md font-bold" href="tel:+919727700636"><span class="material-symbols-outlined text-[18px]">call</span><span>Call Now</span></a>
+  <a class="flex-1 flex items-center justify-center gap-space-xs py-space-sm rounded-xl bg-tertiary-container hover:bg-tertiary text-on-tertiary font-label-md text-label-md font-bold shadow-md" href="https://wa.me/919727700636" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[18px]">chat</span><span>WhatsApp</span></a>
+</div>
+<footer class="w-full bg-inverse-surface text-inverse-on-surface pt-space-xl pb-24 md:pb-space-xl">
+  <div class="max-w-[1320px] mx-auto px-margin-mobile md:px-margin">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-space-xl pb-space-xl">
+      <div class="md:col-span-4 flex flex-col items-start gap-space-sm">
+        <a class="font-headline-sm text-headline-sm text-secondary-fixed" href="index.html">Shree Dutt Furniture</a>
+        <p class="font-body-sm text-body-sm text-surface-dim max-w-sm">Handcrafted solid wood furniture, modular kitchens, and architectural metalwork, made with care in Vastrapur, Ahmedabad.</p>
+        <span class="inline-flex items-center gap-2 rounded-full bg-surface-container-highest/20 px-3 py-1 font-label-sm text-label-sm text-secondary-fixed"><span class="w-2 h-2 rounded-full bg-tertiary-fixed"></span>Open today until 8:30 pm</span>
+      </div>
+      <div class="md:col-span-3 flex flex-col gap-space-xs">
+        <span class="font-title-md text-title-md text-secondary-fixed mb-space-xs">Quick Links</span>
+        <a class="font-body-sm text-body-sm text-surface-dim hover:text-inverse-on-surface transition-colors py-1" href="index.html">Home</a>
+        <a class="font-body-sm text-body-sm text-surface-dim hover:text-inverse-on-surface transition-colors py-1" href="products.html">Products</a>
+        <a class="font-body-sm text-body-sm text-surface-dim hover:text-inverse-on-surface transition-colors py-1" href="About.html">About</a>
+        <a class="font-body-sm text-body-sm text-surface-dim hover:text-inverse-on-surface transition-colors py-1" href="contact.html">Contact / Custom Quote</a>
+      </div>
+      <div class="md:col-span-5 flex flex-col gap-space-xs">
+        <span class="font-title-md text-title-md text-secondary-fixed mb-space-xs">Workshop &amp; Contact</span>
+        <p class="font-body-sm text-body-sm text-surface-dim">6, Hill Park Society, Vastrapur Road, near Chandramauli School, near Railway Station, Vejalpur, Ahmedabad, Gujarat 380015</p>
+        <a class="font-body-sm text-body-sm text-surface-dim hover:text-inverse-on-surface transition-colors" href="tel:+919727700636">Phone: +91 97277 00636</a>
+        <a class="font-body-sm text-body-sm text-surface-dim hover:text-inverse-on-surface transition-colors" href="https://wa.me/919727700636" rel="noopener noreferrer" target="_blank">WhatsApp: +91 97277 00636</a>
+        <a class="font-body-sm text-body-sm text-surface-dim hover:text-inverse-on-surface transition-colors" href="https://www.google.com/maps/dir/?api=1&amp;destination=6%2C+Hill+Park+Society%2C+Vastrapur+Road%2C+Vejalpur%2C+Ahmedabad%2C+Gujarat+380015" rel="noopener noreferrer" target="_blank">Get Directions</a>
+        <span class="font-label-sm text-label-sm text-surface-dim">Mon-Sat, 9:30 AM-8:30 PM; Sunday by appointment</span>
+      </div>
+    </div>
+    <div class="w-full h-[1px] bg-surface-container-highest/20 mb-space-lg"></div>
+    <div class="flex flex-col sm:flex-row items-center justify-between gap-space-sm text-surface-dim font-label-sm text-label-sm"><span>Copyright 2025 Shree Dutt Furniture. All rights reserved. Ahmedabad, Gujarat.</span><span>Website concept by Jundalo Technologies</span></div>
+  </div>
+</footer>
+<script>
+  const currentPage = window.location.pathname.split('/').pop().toLowerCase() || 'index.html';
+  document.querySelectorAll('[data-page-link]').forEach((link) => {
+    if (link.dataset.pageLink === currentPage) {
+      link.setAttribute('aria-current', 'page');
+      link.classList.add('bg-primary-container', 'text-on-primary', 'font-title-md', 'shadow-sm');
+      link.classList.remove('text-on-surface-variant');
+    }
+  });
+</script>
+</body></html>
